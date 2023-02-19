@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z}
+echo {a..z}{a..z} | grep -o "[a-np-z][a-z]\|[a-z][a-pn-z]"| grep -v "oo"
