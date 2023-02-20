@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -alR ./ | grep -c ^d
+ls -R | tail -1 | grep -o / | echo $((`wc -l` + 1))
