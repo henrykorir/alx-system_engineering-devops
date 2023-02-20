@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -R | tail -1 | grep -o / | echo $((`wc -l` + 1))
+find . -type d | wc -l
